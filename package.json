@@ -1,0 +1,40 @@
+{
+	"name": "ectopass",
+	"description": "ectopass web app",
+	"private": true,
+	"version": "1.0.0",
+	"license": "Apache-2.0",
+	"bugs": {
+		"url": "https://github.com/ectotech/ectopass-web/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ectotech/ectopass-web.git"
+	},
+	"authors": [
+		{
+			"name": "Lukas Wass",
+			"email": "dev@lukaswass.se",
+			"url": "https://github.com/LukasWass"
+		}
+	],
+	"contributors": [],
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"preview": "vite preview",
+		"format:all": "prettier --write \"{,!(node_modules)/**/}*.{js,jsx,ts,tsx,json,prettierrc,css,scss}\""
+	},
+	"dependencies": {
+		"react": "^18.0.0",
+		"react-dom": "^18.0.0"
+	},
+	"devDependencies": {
+		"@types/react": "^18.0.0",
+		"@types/react-dom": "^18.0.0",
+		"@vitejs/plugin-react": "^1.3.0",
+		"prettier": "^2.6.2",
+		"typescript": "^4.6.3",
+		"vite": "^2.9.9"
+	}
+}
