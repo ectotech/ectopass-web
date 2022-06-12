@@ -1,0 +1,34 @@
+:root {
+	--contentWidth: 1200px;
+}
+
+.app {
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+}
+
+.appRouter {
+	display: flex;
+	flex: 1;
+}
+
+.screen {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+}
+
+.contentContainer {
+	display: flex;
+	flex: 1;
+	justify-content: center;
+}
+
+.content {
+	display: flex;
+	flex: 1;
+	max-width: var(--contentWidth);
+	box-sizing: border-box;
+	padding: 16px;
+}

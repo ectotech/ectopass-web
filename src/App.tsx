@@ -1,7 +1,10 @@
+import AppRouter from "./routers/AppRouter";
+import "./App.css";
+
 const App = () => {
 	return (
-		<div className="App">
-			<h1>ectopass</h1>
+		<div className="app">
+			<AppRouter />
 		</div>
 	);
 };
