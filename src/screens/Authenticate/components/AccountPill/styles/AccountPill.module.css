@@ -1,0 +1,37 @@
+.container {
+	display: flex;
+	flex-direction: row;
+	height: 48px;
+	border-width: 1px;
+	border-color: var(--grey);
+	box-shadow: 0px 2px 2px var(--grey);
+	border-radius: 24px;
+	border-style: solid;
+	justify-content: center;
+	align-items: center;
+}
+
+.iconContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 24px;
+	height: 24px;
+	margin-left: 24px;
+	border-radius: 50%;
+	background-color: #72dcca;
+}
+
+.iconText {
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	color: var(--white);
+}
+
+.emailText {
+	font-size: 16px;
+	color: var(--darkGrey);
+	margin-right: 24px;
+	margin-left: 8px;
+}

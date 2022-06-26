@@ -1,5 +1,12 @@
 :root {
 	--contentWidth: 1200px;
+	--white: #ffffff;
+	--black: #333333;
+	--blue: #607ff2;
+	--darkBlue: #4b64bf;
+	--lightGrey: #f8f8f8;
+	--grey: #e1e8ec;
+	--darkGrey: #5a5a5a;
 }
 
 .app {

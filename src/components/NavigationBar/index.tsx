@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
 import styles from "./styles/NavigationBar.module.css";
 import Logo from "../../assets/Logo.svg";
+import { useAuthState } from "../../hooks/useAuthState";
 
 const NavigationBar = () => {
+	const { user } = useAuthState();
+
 	return (
 		<div className={styles.container}>
 			<div className={styles.contentContainer}>
@@ -55,21 +58,32 @@ const NavigationBar = () => {
 					Open Source
 				</a>
 
-				<div className={styles.rightContainer}>
-					<Link
-						className={styles.navigationButton}
-						to={"/auth?m=sign-up"}
-					>
-						<span className={styles.signUpText}>Get Started</span>
-					</Link>
+				{user?.email ? (
+					<div className={styles.rightContainer}>
+						<Link
+							className={styles.navigationButton}
+							to={"/vault"}
+						>
+							Open passwords
+						</Link>
+					</div>
+				) : (
+					<div className={styles.rightContainer}>
+						<Link
+							className={styles.navigationButton}
+							to={"/auth?m=sign-up"}
+						>
+							<span className={styles.signUpText}>Get Started</span>
+						</Link>
 
-					<Link
-						className={styles.navigationButton}
-						to={"/auth?m=sign-in"}
-					>
-						<span className={styles.signInText}>Login</span>
-					</Link>
-				</div>
+						<Link
+							className={styles.navigationButton}
+							to={"/auth?m=sign-in"}
+						>
+							<span className={styles.signInText}>Login</span>
+						</Link>
+					</div>
+				)}
 			</div>
 		</div>
 	);
