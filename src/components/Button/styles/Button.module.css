@@ -83,3 +83,43 @@
 	font-weight: 500;
 	color: var(--black);
 }
+
+.spinner {
+	width: 4px;
+	height: 24px;
+	border-radius: 2px;
+	display: block;
+	margin: 20px auto;
+	top: -5px;
+	position: relative;
+	background: currentColor;
+	color: #fff;
+	box-sizing: border-box;
+	animation: animationLoader 0.3s 0.3s linear infinite alternate;
+}
+
+.spinner {
+	width: 28px;
+	height: 28px;
+	background: var(--white);
+	border-radius: 50%;
+	top: -9px;
+	position: relative;
+	animation: skLinRotate 1s ease-in-out infinite alternate;
+}
+
+.spinner:after {
+	content: "";
+	position: absolute;
+	inset: 5px;
+	border-radius: 50%;
+	border: 2px solid transparent;
+	border-top-color: var(--blue);
+}
+
+@keyframes skLinRotate {
+	95%,
+	100% {
+		transform: rotate(840deg);
+	}
+}
