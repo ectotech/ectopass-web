@@ -26,6 +26,8 @@
 		"format:all": "prettier --write \"{,!(node_modules)/**/}*.{js,jsx,ts,tsx,json,prettierrc,css,scss}\""
 	},
 	"dependencies": {
+		"firebase": "^9.8.3",
+		"phosphor-react": "^1.4.1",
 		"react": "^18.0.0",
 		"react-dom": "^18.0.0",
 		"react-router-dom": "^6.3.0"
