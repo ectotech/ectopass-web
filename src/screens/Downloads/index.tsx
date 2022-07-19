@@ -1,5 +1,4 @@
 import NavigationBar from "../../components/NavigationBar";
-import styles from "./styles/Downloads.module.css";
 
 const Downloads = () => {
 	return (
